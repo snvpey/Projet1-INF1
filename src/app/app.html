@@ -1,7 +1,7 @@
-<div class="page" [style.background-color]="theme.backgroundColor()">
+<div class="page" [ngClass]="backgroundColor()">
   <app-header></app-header>
   <main>
-    <router-outlet></router-outlet>
+    <app-home (backgroundColorChanged)="backgroundColor.set($event)"></app-home>
   </main>
   <app-footer></app-footer>
 </div>

@@ -8,6 +8,6 @@ import { NgClass } from '@angular/common';
   templateUrl: './square.html',
 })
 export class Square {
-  @Input() color = 'red';
+  @Input() color = '';
   @Output() colorSelected = new EventEmitter<string>();
 }

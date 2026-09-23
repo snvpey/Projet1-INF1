@@ -1,6 +1,6 @@
 <div class="square">
-  <app-square color="red" (colorSelected)="theme.setBackgroundColor($event)"></app-square>
-  <app-square color="green" (colorSelected)="theme.setBackgroundColor($event)"></app-square>
-  <app-square color="blue" (colorSelected)="theme.setBackgroundColor($event)"></app-square>
-  <app-square color="yellow" (colorSelected)="theme.setBackgroundColor($event)"></app-square>
+  <app-square color="red" (colorSelected)="backgroundColorChanged.emit($event)"></app-square>
+  <app-square color="green" (colorSelected)="backgroundColorChanged.emit($event)"></app-square>
+  <app-square color="blue" (colorSelected)="backgroundColorChanged.emit($event)"></app-square>
+  <app-square color="yellow" (colorSelected)="backgroundColorChanged.emit($event)"></app-square>
 </div>
